@@ -1,0 +1,27 @@
+.portFolio {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+    border-left: 0;
+  }
+  
+  .sidenav {
+    max-width: 300px;
+    max-height: 500px;
+    border-left: 0;
+  }
+
+  .main{
+    max-width: 300px;
+    max-height: 500px;
+    border-left: 0;
+  }
+  
+  .container{
+    border-left: 0; 
+  }
+
+  .row{
+    margin-left: calc(-3*var(--bs-gutter-x));
+    margin-right: calc(-3*var(--bs-gutter-x));
+  }
