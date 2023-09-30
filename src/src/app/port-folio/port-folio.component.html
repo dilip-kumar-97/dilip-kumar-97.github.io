@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+
+<mat-card>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>CONTACT</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p [(ngModel)]="value"> Contact No : {{data.mobileNumber}}</p> 
+      <p>Email : {{data.mailId}}</p>
+      <p>Address : {{data.Address}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-divider></mat-divider>
+
+  <mat-card class="main">
+    <mat-card-header>
+      <mat-card-title>SKILLS</mat-card-title>
+    </mat-card-header>
+    <mat-card-content *ngFor="let skill of data.Skills">
+      <p>{{skill}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-divider></mat-divider>
+
+  <mat-card class="main">
+    <mat-card-header>
+      <mat-card-title>EDUCATION</mat-card-title>
+    </mat-card-header>
+    <div *ngFor="let Education of data.Education">
+    <mat-card-header>
+      <mat-card-subtitle>{{Education.Study}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{Education.Institute}}</p>
+      <p>{{Education.passedOut}}</p>
+    </mat-card-content>
+    </div>
+  </mat-card>
+
+  <mat-divider></mat-divider>
+
+  <mat-card class="main">
+    <mat-card-header>
+      <mat-card-title>LANGUAGE</mat-card-title>
+    </mat-card-header>
+    <mat-card-content *ngFor="let language of data.Language">
+      <p>{{language}}</p>
+    </mat-card-content>
+  </mat-card>
+
+</mat-card>
+</div>
+<div class="col-9">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>WORK EXPERIANCE</mat-card-title>
+    </mat-card-header>
+    <div  *ngFor="let company of data.workExperiance">
+    <mat-card-header>
+      <mat-card-subtitle>{{company.role}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-header>
+      <div class="col-9">
+    <h3>{{company.companyName}}</h3>
+      </div>
+      <div class="col-3">
+        <p>{{company.period}}</p>
+      </div>
+  </mat-card-header>
+    <mat-card-content *ngFor="let item of company.roleDescription">
+      <ul>
+      <li>{{item}}</li>
+    </ul>
+    </mat-card-content>
+  </div>
+  </mat-card>
+</div>
+
+</div>
