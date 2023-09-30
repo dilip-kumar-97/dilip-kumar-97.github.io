@@ -53,6 +53,7 @@ export class SizeDetectorComponent implements AfterViewInit{
       return isVisible;
     }))?.id;
 
+    this.resizeSvc.onResize(currentSize?currentSize:SCREEN_SIZE.XS);
     
   }
 
