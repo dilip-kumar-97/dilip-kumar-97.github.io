@@ -30,5 +30,4 @@ value:any
       this.data.workExperiance=this.Object.workExperiance;
     });
   }
-  
 }

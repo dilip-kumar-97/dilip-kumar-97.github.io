@@ -16,6 +16,7 @@ import { PortFolioComponent } from './port-folio/port-folio.component';
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { SizeDetectorComponent } from './size-detector/size-detector.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    PortFolioComponent
+    PortFolioComponent,
+    SizeDetectorComponent
   ],
   imports: [
     BrowserModule,
