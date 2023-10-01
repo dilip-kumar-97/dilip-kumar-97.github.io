@@ -11,5 +11,8 @@ export class FooterComponent {
   imagePathTwitter = "assets/Icons/twitter.svg";
   imagePathLinkedIn = "assets/Icons/linkedin.svg";
   imagePathGithub = "assets/Icons/github.svg";
+  imagePathLocation = "assets/Icons/location.svg";
+  imagePathMail = "assets/Icons/mail.svg";
+  imagePathPhone = "assets/Icons/phone.svg";
 
 }

@@ -13,32 +13,6 @@
 
         <mat-divider></mat-divider>
 
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>CONTACT</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p  class="margin" [(ngModel)]="mobileNo"> Contact No : {{data.mobileNumber}}
-              
-                <button mat-button class="icon" [cdkCopyToClipboard]="mobileNo">
-                <img class="icon" src={{imagePathCopy}} alt="">
-                </button>
-              
-              
-            </p>
-            <p class="margin" [(ngModel)]="email">  Email : {{data.mailId}}
-              
-              <button mat-button class="icon" [cdkCopyToClipboard]="email">
-                <img class="icon" src={{imagePathCopy}} alt="">
-              </button>
-           
-            </p>
-            <p>Address : {{data.Address}}</p>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-divider></mat-divider>
-
         <mat-card class="main">
           <mat-card-header>
             <mat-card-title>SKILLS</mat-card-title>
