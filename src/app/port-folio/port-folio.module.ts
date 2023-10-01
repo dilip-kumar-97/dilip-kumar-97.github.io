@@ -6,6 +6,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {FormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon'
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon'
     MatCardModule,
     MatDividerModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    ClipboardModule
   ]
 })
 export class PortFolioModule {}

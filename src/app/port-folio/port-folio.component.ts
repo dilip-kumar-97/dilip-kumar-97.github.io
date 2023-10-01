@@ -9,9 +9,12 @@ import { details } from './details';
 })
 export class PortFolioComponent {
 
+  imagePathCopy = "assets/Icons/copy.svg";
 data ={} as details
+mobileNo:any
+email:any
+
 Object:any
-value:any
   constructor(private details:DetailsService){
     details.getdata().subscribe(data=>{
       console.warn(data);
@@ -22,12 +25,15 @@ value:any
       this.data.Location = this.Object.Location;
       this.data.Skills = this.Object.Skills;
       this.data.mailId = this.Object.mailId;
+      this.email = this.Object.mailId;
       this.data.Professional_Traits = this.Object.Professional_Traits;
       this.data.name = this.Object.name;
       this.data.mobileNumber = this.Object.mobileNumber;
+      this.mobileNo = this.Object.mobileNumber;
       this.data.profile = this.Object.profile;
       this.data.DateOfBirth= this.Object.DateOfBirth;
       this.data.workExperiance=this.Object.workExperiance;
     });
   }
+
 }
